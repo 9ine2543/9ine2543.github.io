@@ -1,1 +1,1 @@
-www.9ine2543.github.io
+9ine2543.github.io
