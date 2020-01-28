@@ -1,15 +1,33 @@
 .backG{
-    background-color: darksalmon;
+    animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 10s; /* Chrome and Safari */
     display: flex;
     height: 100vh;
 }
+    @keyframes colorchange
+    {
+      0%   {background: darksalmon;}
+      25%  {background: darkkhaki;}
+      50%  {background: darkcyan;}
+      75%  {background: darkolivegreen;}
+      100% {background: darksalmon;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+        0%   {background: darksalmon;}
+        25%  {background: darkkhaki;}
+        50%  {background: darkcyan;}
+        75%  {background: darkolivegreen;}
+        100% {background: darksalmon;}
+    }
 
 .name{
     /* background-color: black; */
     color: black;
     text-shadow: aqua;
     text-align: center;
-    font-size: 40px;
     position: fixed;
     left: 50%;
     top: 50%;
